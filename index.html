@@ -1,0 +1,227 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Louvre Museo</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo del Louvre</a>
+          <a href="#secc2">Festival "El poder a traves del arte"</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Museo del Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Louvre es uno de los museos mas grandes del mundo, se situa en el interior del Palacio de Louvre, una antigua fortaleza que fue construida por el rey Felipe II a finales del siglo XII, en pleno centro de Paris.  En su interior se albergan casi 35,000 objetos que abarcan desde la prehistoria hasta el siglo XXI.  Es considerado el museo mas visitado del mundo gracias a las mas de 8 millones de personas que cada año lo recorren. A lo largo del tiempo el edificio ha experimentado gran cantidad de ampliaciones hasta tener su aspecto actual. En 1692 el edificio fue ocupado por la Academia de las Inscripciones y las Bellas Artes, de la Academia Real de Pintura y Escultura, quienes llevaron a cabo la primera exposicion en 1699. La Academia se establecio en el Louvre durante mas de 100 años; durante la Revolucion Francesa, la Asamblea Nacional determino que el Louvre debia ser utilizado unicamente como museo, asi que  a partir del 10 de agosto de 1793 el museo abrio sus puertas con una exposicion de 537 obras expropiadas a la realeza y a la Iglesia. Debido a problemas estructurales, el edificio permanecio cerrado de 1796 hasta 1801. La coleccion de obras del Louvre incremento durante los reinados de Luis XVIII y Carlos X y durante el segundo imperio Frances, se agregaron 20,000 obras en esa epoca. A partir del año 2008 la coleccion se dividio en 8 departamentos: 1.- Antigüedades Griegas, Romanas y Etruscas, 2.- Antigüedades de Oriente Próximo, 3.- Antigüedades de Egipto, 4.- Pinturas , 5.-Grabados y Dibujos, 6.-Escultura, 7.- Artes decorativas 8.- Arte Islamico.  Algunas de las obras mas importantes que podemos apreciar en el Louvre son:  La Gioconda (Leonardo da Vinci), La balsa de la Medusa (Theodore Gericault), Las bodas de Cana (Veronese).</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		       	
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<a href="360visualizar.html">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        	</a>
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>Visor 360 Museo Louvre</p>
+	        </div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+        			<a href="360visualizar.html">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		</a>
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Museo Louvre Visor 360</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Festival "El poder a traves del arte"</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>En este festival se hace enfasis en el poder del conocimiento que es plasmado en el arte. Contando con exposiciones de autores como Jorge Guerra, Marcelo Gullo, Antony Sutton, y Juan Miguel Zunzunegui. 
+		        <br>
+		        <br>
+		        Tambien se presentaran los libros:<br>
+		        1984 de George Orwell<br>
+		      	Un mundo feliz de Aldous Huxley<br>
+		      	The Rape of the Mind: The Psychology of Thought Control and Menticide de Joost Meerloo<br>
+		      	Confesiones de un sicario economico de John Perkins.<br>
+<br>
+		      	Asi como los materiales audiovisuales titulados:<br>
+		      	Land of the Blind (2006)<br>
+		      	Zeitgesit Documental<br>
+		      	The Money Masters Documental (1996)<br>
+		      	</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		       
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Ponentes</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Juan Miguel Zunzunegui, nacido en 1975 en la Ciudad de México, es un escritor, historiador, conferencista, y academico mexicano. Es autor de 5 libros, conocido por su enfoque critico y revisionista de la historia de Mexico.<p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Juan Marcelo Gullo Omodeo, nacido en 1963 en Argentina, es un academico, analista, escritor y consultor en relaciones internacionales argentino. Doctor en ciencia política y magister en relaciones internacionales.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>Antony Cyril Sutton, nacido en 1925 en el Reino Unido, fue un economista e historiador británico. Estudio sobre la importancia de la inversion y la tecnologia occidentales en el desarrollo de la Union Sovietica, entre otros.
+		        <br>
+		        <p>Jorge Guerra Suarez, investigador autodidacta e historiador, autor de la nobleza negra.
+    		</div>
+    		<br>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>De izquierda a derecha, de arriba a abajo, Zunzunegui, Gullo, Sutton, y Guerra.<p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Libros y videos</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>1984 de George Orwell es una novela de distopía cuya trama ocurre en Oceanía,  un país dominado por un gobierno totalitario que mantiene en constante vigilancia a sus ciudadanos e insiste en espiar sus pensamientos para mantener el orden. La novela denuncia las prácticas establecidas por gobiernos como los de Franco y Stalin.
+		        <br>
+		        <br>
+		        Un mundo feliz, escrito por el inglés Aldous Leonard Huxley en 1931 y publicado un año después, trata de una de las distopías más famosas del siglo XX. En ella, el autor presenta un mundo futuro deshumanizado en el que la sociedad está dividida en un sistema de castas en el que los individuos están creados y alterados genéticamente.
+		        <br>
+		        <br>
+		        The Rape of the Mind escrito por Joost Meerloo es una obra literaria que afirma que "Mientras que el miedo prepara a la población para la mentira, el uso de la propaganda difunde desinformación y promueve la confusión con respecto a la fuente de la amenaza o la naturaleza de la crisis, ayudando a romper las mentes de las masas".
+		        <br>
+		        <br>
+		      	Confesiones de un sicario económico, es una autobiografía escrita por Jonh Perkins y publicada en el 2004. El autor relata la historia de su carrera con  una firma de consultoria y de como llegó a convertirse en un "sicario económico" haciendo referencia a los profesionales altamente remunerados que le tienden trampas de billones de dólares a los países del mundo utilizando herramientas poco honestas.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Land of the Blind es una película del 2006, dirigida por Robert Edwards y protagonizada por Donald Sutherland, Ralph Fiennes, Tom Hollander y Lara Flynn Boyle. Es una sátira política basada en incidentes históricos en los cuales los gobernantes tiránicos fueron derrocados por nuevos líderes que luego resultaron ser peores que sus antecesores, esta película pretende transmitir una sensación de  desencanto.El título fue inspirado por el dicho " En la tierra de los ciegos, el tuerto es el rey".
+		        <br>
+		        <br>
+		        Zeitgest: The Movie, es un documental escrito dirigido y producido por Peter Joseph en 2007. El documental presenta tres secciones, en la primera expone al Cristianismo como un mito; en la segunda, analiza los atentados del 11-S y en la tercera habla sobre la política y la economía global, enfocándose en el monopolio del dinero y el gasto militar.
+		        <br>
+		        <br>
+		        The Money Masters es un documental dirigido por Bill Still realizado en 1996, que analiza como los bancos centrales controlan la economía y afectan a la sociedad. Nos muestra la historia del dinero y la influencia de los sistemas bancarios a lo largo del tiempo.
+		        <br>
+		        <br>
+		        Trailers de la exposicion: (aqui iran los links de los trailers)
+		        <br>
+		        </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img4.png" title="Img 4">
+        		<!--texto para la imagen-->
+        		<p>De izquierda a derecha, 1984, The Rape of the Mind, y Land of the Mind<p>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">Todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
